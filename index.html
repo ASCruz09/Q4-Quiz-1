@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css">
+	<style>
+		body{
+			background-image: url(https://i.pinimg.com/736x/ed/e0/c0/ede0c0ec297da14660895de9db34561d.jpg);
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-attachment: fixed;
+		}
+		.col-md-10{
+			height: 650px;
+			width: 400px;
+			background-color: black;
+		}
+		#img1{
+			height: 100px;
+			width: 100px;
+			border-radius: 50%;
+
+		}#text1{
+			font-size: 50px;
+			color: white;
+		}#email{
+			color: white;
+		}#password{
+			color: white;
+		}
+	</style>
+	<title>Q4 Quiz 1</title>
+</head>
+<body>
+
+<center>
+			<br><br><br><br>
+	<div id="login-container">
+		<div class="col-md-10">
+			<img id="img1" src="profile_pic.png" class="rounded-circle"><br><br>
+		<div id="text1">
+			<p>Login</p>
+		</div>
+		<form action="mainpage.html" class="form-group">
+			<label id="email"></label><br>
+			<input type="text" class="form-control bg-dark" name="email" id="email">
+			<br>
+			<label id="password"></label><br>
+			<input type="text" class="form-control bg-dark" name="password" id="password">
+			<br>
+			<p>Forgot Password?</p>
+			<a href="mainpage.html"><button class="btn btn-info">Login</button></a>
+			<a href="#"><button type="reset" class="btn btn-light">Cancel</button></a>
+		</form>
+		</div>
+	</div>
+</center>
+	<script type="text/javascript">
+		document.getElementById("email").innerHTML = "Email:";
+		document.getElementById("password").innerHTML = "Password:";
+	</script>
+</body>
+</html>
